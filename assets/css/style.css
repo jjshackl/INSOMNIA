@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "";
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -81,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 10px;
 }
 #home h3 {
-  color: rgba(146, 40, 192, 1);
+  color: #7848C2;
   margin: 10px 0 0 0;
   font-size: 24px;
 }
@@ -111,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: ease-in-out 0.3s;
 }
 #home .nav-box h3 a:hover {
-  color: #7848c2;
+  color: #740651;
 }
 #home .nav-box:hover {
   border-color: #7848c2;
@@ -184,10 +189,6 @@ section {
 .tsb {
   padding: 40px 0;
 }
-.tsb .content h3 {
-  font-weight: 700;
-  font-size: 28px;
-}
 
 .tsb .vita-box {
   text-align: center;
@@ -229,8 +230,7 @@ section {
 }
 
 .ao .info-box {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px 10px 10px;
   border-radius: 8px;
   text-align: center;
   border: 1px solid #7848c2;
@@ -299,6 +299,16 @@ section {
 .bt .content .img img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.bt .content p {
+  /* */
+
+}
+
+.bt .content .info {
+  height: 50%;
+  padding: 10px 10px 10px 10px;
 }
 
 .bt .content .txt {
@@ -387,6 +397,10 @@ section {
   bottom: 15px;
 }
 
+.team p {
+  font-size: 20px;
+  color: #628C93;
+}
 
 /* ============================================================================
 ================================  CTA CSS  ====================================
