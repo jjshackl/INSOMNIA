@@ -27,6 +27,10 @@ h3 {
   font-size: 28px;
 }
 
+p {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -140,12 +144,17 @@ h3 {
   }
 }
 
+#media {
+  height: 30%;
+  background-color: #5F0A87;
+}
+
 /* ============================================================================
 ==============================  Section CSS  ==================================
 =============================================================================*/
 
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -182,15 +191,39 @@ section {
   color: #151515;
 }
 
+.sleepbox section {
+  padding: 40px 0;
+}
+
+/* ============================================================================
+============================ Products CSS  ====================================
+=============================================================================*/
+
+.products {
+  background: #fff;
+}
+
 /* ============================================================================
 =========================  The Sleep Box CSS  =================================
 =============================================================================*/
 
 .tsb {
-  padding: 40px 0;
+  background: inherit;
 }
 
-.tsb .vita-box {
+.prod {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.prod .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vita-box {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -198,14 +231,14 @@ section {
   padding-top: 10px;
 }
 
-.tsb .vita-box h4 {
+.vita-box h4 {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.tsb .vita-box .icon {
+.vita-box .icon {
   margin: 0 auto;
   width: 48px;
   height: 48px;
@@ -284,6 +317,7 @@ section {
 =============================================================================*/
 
 .bt {
+  background: inherit;
   padding-bottom: 20px;
 }
 
@@ -328,7 +362,6 @@ section {
 
 .team {
   background: #fff;
-  padding: 60px 0;
 }
 
 .team .member {
@@ -346,7 +379,12 @@ section {
 
 .team .member .social {
   position: absolute;
-  left: 0;
+  left: 10px;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: left;
 }
 
 .team .member .social a {
@@ -571,4 +609,118 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////*/
+.title {
+  padding-top: 80px;
+}
+
+.sleepbox {
+  padding: 20px;
+}
+
+.vitamins {
+  padding: 20px;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div a {
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+@media screen and (max-width: 600px) {
+.accordion { height: auto; }
+.accordion ul li,
+.accordion ul li:hover,
+.accordion ul:hover li,
+.accordion ul:hover li:hover {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  -webkit-transition: none;
+  transition: none;
+}
+
+}
+
+.split {
+  padding-bottom: 40px;
+}
+.split p {
+  padding-bottom: 20px;
 }
